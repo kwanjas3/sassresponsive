@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://kwanjas3.github.io/sassresponsive",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w scss/ -o dist/css/ --recur"
+    "sass": "node-sass -w scss/ -o dist/css/ --recur",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.3"
   }
 }
