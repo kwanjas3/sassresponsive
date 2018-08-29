@@ -4,6 +4,7 @@ $show-home-image: true;
 $home-image: url(../img/background3.jpg);
 $background-opacity: 0.4;
 //basically functions, to call them @include
+
 @mixin easeOut {
   transition: all 1s ease-in-out;
 }
@@ -27,7 +28,8 @@ $background-opacity: 0.4;
     }
   }
 }
-
+@import "config";
+@import "menu";
 * {
   box-sizing: border-box;
 }
