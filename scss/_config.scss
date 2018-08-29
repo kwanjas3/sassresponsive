@@ -1,9 +1,10 @@
 $primary-color: #002;
+// $primary-color: #fff;
 $secondary-color: #0a8ec2;
 $show-home-image: true;
 $home-image: url(../img/background3.jpg);
 $background-opacity: 0.75;
-//basically functions, to call them @include
+//basically functions with no returns, to call them @include
 
 @mixin easeOut {
   transition: all 1s ease-in-out;
@@ -28,6 +29,16 @@ $background-opacity: 0.75;
     }
   }
 }
+
+//Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
 //media query mixins
 
 @mixin mediaSm {
